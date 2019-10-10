@@ -1,1 +1,53 @@
 // Navigation Styles here
+body {
+    
+
+    header {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px 40px;
+        margin: auto;
+        border-bottom: 2px dashed @navigation-border;
+        
+        .nav {
+            .fcenter();
+            .page-setup();
+            .tshoot();
+            
+
+            div {
+                width: 65%;
+                .tshoot();
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            nav {
+
+                width: 35%;
+                display: flex;
+                justify-content: space-between;
+                .tshoot();
+
+                a {
+                    font-size: 1.8rem;
+                
+                } // this ends a
+            } // this ends nav
+        } // this ends .nav
+
+        .bus-banner {
+            width: 100%;
+        }
+
+        .header-content {
+            padding: 2% 0;
+        }
+    } // this ends header
+}
+

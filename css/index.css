@@ -168,6 +168,47 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+body header {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 40px;
+  margin: auto;
+  border-bottom: 2px dashed #C0C0C0;
+}
+body header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+body header .nav div {
+  width: 65%;
+  border: 2px solid black;
+}
+body header .nav div p {
+  font-size: 2rem;
+}
+body header .nav nav {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+body header .nav nav a {
+  font-size: 1.8rem;
+}
+body header .bus-banner {
+  width: 100%;
+}
+body header .header-content {
+  padding: 2% 0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
