@@ -168,46 +168,41 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-body header {
-  max-width: 800px;
+body section {
   width: 100%;
+  padding: 30px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 20px 40px;
-  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
   border-bottom: 2px dashed #C0C0C0;
 }
-body header .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  border: 2px solid black;
-}
-body header .nav div {
-  width: 65%;
-  border: 2px solid black;
-}
-body header .nav div p {
-  font-size: 2rem;
-}
-body header .nav nav {
-  width: 35%;
+body section .nav {
   display: flex;
   justify-content: space-between;
-  border: 2px solid black;
-}
-body header .nav nav a {
-  font-size: 1.8rem;
-}
-body header .bus-banner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2%;
   width: 100%;
 }
-body header .header-content {
-  padding: 2% 0;
+body section .nav div {
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+body section .nav div h1 {
+  font-size: 4rem;
+  padding: 0;
+}
+body section .nav nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+body section .nav nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.8rem;
 }
 .footer {
   width: 100%;
@@ -220,11 +215,41 @@ body header .header-content {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home header {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home header .bus-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home header img {
+  max-width: 800px;
+}
+.home header .header-content {
+  max-width: 800px;
+  padding-top: 2%;
+}
+.home header .header-content h1 {
+  padding-bottom: 1%;
+}
 .home .content-section {
-  margin: 30px 0;
+  margin: 15px 0 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 4%;
 }
 .home .content-section .text-content {
   width: 48%;
