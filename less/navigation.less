@@ -1,6 +1,12 @@
 // Navigation Styles here
 body {
-    
+    @media @mobile {
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .top { 
         width: 100%;
         padding: 30px auto;
@@ -8,6 +14,12 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         border-bottom: 2px dashed @navigation-border;
+
+        @media @mobile {
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
         
         .nav {
             display: flex;
@@ -16,10 +28,22 @@ body {
             padding: 2%;
             width: 100%;
 
+            @media @mobile {
+                flex-direction: column;
+                flex-wrap: none;
+            }
+
             div {
                 display: flex;
                 align-items: center;
                 width: 55%;
+
+                @media @mobile {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 2%;
+                }
 
                 h1 {
                     font-size: 4rem;
@@ -32,6 +56,13 @@ body {
                 display: flex;
                 justify-content: space-between;
                 padding: 1%;
+
+                @media @mobile {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                }
 
                 a {
                     text-decoration: none;
