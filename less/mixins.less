@@ -14,3 +14,19 @@
     width: 100%;
     margin: 0 auto;
 }
+
+.btn-design (@button-bg, @width: 200px, @btn-text: white) {
+    display: block;
+    background-color: @button-bg;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @btn-text;
+
+    &:hover{
+        background-color: @btn-text;
+        color: @button-bg;
+      }
+    }
